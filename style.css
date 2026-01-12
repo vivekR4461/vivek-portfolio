@@ -8,6 +8,13 @@ body {
     background-attachment: fixed;
 }
 
+.fix{
+    position: sticky;
+    width: 100%;
+    margin: 0;
+    top: 0;
+}
+
 header {
     background-color: #333;
     color: #fff;
@@ -20,6 +27,7 @@ nav {
     color: #fff;
     text-align: center;
     padding: 0.5em 0;
+    margin: 0;
 }
 
 nav a {
@@ -29,7 +37,14 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #555;
+    animation: word 100ms ease-in-out forwards;
+}
+
+@keyframes word {
+    to{
+        background-color: lightseagreen;
+        color: black;
+    }    
 }
 
 section {
@@ -39,6 +54,7 @@ section {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
+    text-align: justify;
 }
 
 h2 {
@@ -50,6 +66,58 @@ h2 {
     margin-bottom: 1.5em;
 }
 
+.link{
+    width: 25%;
+    a{
+        text-decoration: none;
+        margin: 0;
+    }
+}
+
+.btn{
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    margin: 0;
+
+    button{
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        background-color: lightblue;
+        border: 0px;
+        border-radius: 20px;
+    }
+}
+.btn:hover{
+    animation: btn 200ms ease-in-out forwards;
+
+}
+.btn>button:hover{
+    animation: btn 200ms ease-in-out forwards;
+}
+
+@keyframes btn {
+    to{
+        background-color: lightseagreen;
+        font-size: 0.8rem;
+        color: white;
+        transform: scale(1.05);
+    }
+}
+
+.view-resume{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
 footer {
     background-color: #333;
     color: #fff;
@@ -59,29 +127,4 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form label, .contact-form input, .contact-form textarea, .contact-form button {
-    margin-bottom: 10px;
-}
-
-.contact-form button {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #555;
-}
-
-.name{
-    text-decoration: solid;
 }
