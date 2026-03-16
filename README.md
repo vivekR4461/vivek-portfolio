@@ -24,7 +24,7 @@ This is my personal portfolio website where I showcase my projects, skills as a 
 ## 📂 Project Structure
 
 portfolio/ <br>
-│  <br>
+│ <br>
 ├── index.html <br>
 ├── portfolio.png <br>
 ├── s1.jpg <br>
