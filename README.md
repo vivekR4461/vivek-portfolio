@@ -25,15 +25,11 @@ This is my personal portfolio website where I showcase my projects, skills as a 
 
 portfolio/
 │ 
-├── index.html
-├── portfolio.png
-├── s1.jpg
-├── style.css
+├── index.html <br>
+├── portfolio.png <br>
+├── s1.jpg <br>
+├── style.css <br>
 └── README.md
-
-## 📸 Screenshots
-
-(Add screenshots of your portfolio here)
 
 ## 🌐 Live Demo
 
