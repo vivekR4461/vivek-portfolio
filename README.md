@@ -24,7 +24,7 @@ This is my personal portfolio website where I showcase my projects, skills as a 
 ## 📂 Project Structure
 
 portfolio/
-│ 
+│  <br>
 ├── index.html <br>
 ├── portfolio.png <br>
 ├── s1.jpg <br>
@@ -40,5 +40,5 @@ https://vivekr4461.github.io/vivek-portfolio/
 If you would like to connect with me:
 
 * LinkedIn: https://www.linkedin.com/in/vivek-rajput-83a526201/
-* Email: [your@email.com](mailto:vivekrajput4461@gmail.com)
+* Email: [vivekrajput4461@email.com](mailto:vivekrajput4461@gmail.com)
 * GitHub: https://github.com/vivekR4461
