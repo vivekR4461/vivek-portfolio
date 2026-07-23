@@ -110,7 +110,8 @@ h2 {
         width: 100%;
         background-color: lightblue;
         border: 0px;
-        border-radius: 20px;
+    	border-radius: 20px;
+		font-size: 0.9rem;
     }
 }
 .btn:hover{
@@ -127,6 +128,27 @@ h2 {
         font-size: 0.8rem;
         color: white;
         transform: scale(1.05);
+    }
+}
+
+.nobtn{
+	height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: lightblue;
+  	margin: 0;
+
+    .text{
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        background-color: lightblue;
+        border: 0px;
+      	border-radius: 20px;
+		font-size: 0.9rem;
+		display: flex;
+	    align-items: center;
+    	justify-content: center;
     }
 }
 
