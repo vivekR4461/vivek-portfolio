@@ -40,7 +40,6 @@ header h1 {
     white-space: nowrap; 
     border-right: 3px solid #18bc9c; 
     width: 0;
-    /* Typing takes 2.5s. Blinking runs 6 times (4.5s total), stopping 2s after typing finishes */
     animation: typing 2.5s steps(40, end) forwards, blink 0.75s step-end 6 forwards;
 }
 @keyframes typing {
@@ -52,13 +51,12 @@ header h1 {
     50% { border-color: #18bc9c; }
 }
 
-/* Header Links with Individual Hover Drops */
 /* Header Links Container */
 .header-links {
     margin-top: 1.5rem;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* CRITICAL FIX: Stops other buttons from stretching */
+    align-items: flex-start; 
     gap: 15px;
     flex-wrap: wrap;
 }
@@ -76,14 +74,14 @@ header h1 {
     border-radius: 25px;
     overflow: hidden;
     min-width: 140px;
-    transition: all 0.8s ease-out; /* Smooth shrink */
+    transition: all 0.8s ease-out; 
 }
 
 .hover-link:hover {
     background-color: rgba(255, 255, 255, 0.1); 
     border-color: #18bc9c;
     box-shadow: 0 4px 10px rgba(24, 188, 156, 0.3);
-    transition: all 0.6s ease-out; /* Smooth expand */
+    transition: all 0.6s ease-out;
 }
 
 .link-title {
@@ -98,15 +96,14 @@ header h1 {
     color: #18bc9c;
     font-size: 0.9rem;
     font-weight: 600;
-    transition: all 0.8s ease-out; /* Smooth shrink */
+    transition: all 0.8s ease-out;
 }
 
-/* Only expands the detail span inside the currently hovered link */
 .hover-link:hover .link-detail {
     max-height: 50px;
     opacity: 1;
     margin-top: 5px;
-    transition: all 0.6s ease-out; /* Smooth expand */
+    transition: all 0.6s ease-out;
 }
 
 /* Glassmorphism Container */
@@ -122,14 +119,12 @@ header h1 {
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
-/* Page Load Animation Setup */
 section {
     margin-bottom: 3.5rem;
     opacity: 0; 
     animation: fadeIn 0.8s ease-out forwards;
 }
 
-/* Staggered Animation Delays */
 section:nth-child(1) { animation-delay: 0.1s; }
 section:nth-child(2) { animation-delay: 0.2s; }
 section:nth-child(3) { animation-delay: 0.3s; }
@@ -157,13 +152,11 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
-/* Text Styles */
 .about-text, .edu-text {
     font-size: 1.1rem;
     color: #444;
 }
 
-/* Timeline / List Styles */
 .timeline-item {
     margin-bottom: 1.5rem;
     padding-left: 15px;
@@ -204,13 +197,13 @@ h2 {
     cursor: pointer;
     overflow: hidden;
     min-width: 200px;
-    transition: all 0.8s ease-out; /* Smooth shrink */
+    transition: all 0.8s ease-out;
 }
 .skill-item:hover {
     background-color: #18bc9c;
     color: white;
     box-shadow: 0 4px 10px rgba(24, 188, 156, 0.3);
-    transition: all 0.6s ease-out; /* Smooth expand */
+    transition: all 0.6s ease-out; 
 }
 .skill-name {
     font-weight: 600;
@@ -228,16 +221,15 @@ h2 {
     color: #fff;
     font-size: 0.9rem;
     font-weight: 500;
-    transition: all 0.8s ease-out; /* Smooth shrink */
+    transition: all 0.8s ease-out; 
 }
 .skill-item:hover .skill-details {
     max-height: 200px;
     opacity: 1;
     margin-top: 15px;
-    transition: all 0.6s ease-out; /* Smooth expand */
+    transition: all 0.6s ease-out; 
 }
 
-/* Mobile View Adaptation for Skills */
 @media (max-width: 768px) {
     .skill-item {
         background-color: #18bc9c;
@@ -251,7 +243,6 @@ h2 {
     }
 }
 
-/* Basic Pill Tag for Hobbies */
 .basic-pill {
     background-color: rgba(236, 240, 241, 0.8);
     color: #2c3e50;
