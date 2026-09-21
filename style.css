@@ -56,12 +56,11 @@ header h1 {
     margin-top: 1.5rem;
     display: flex;
     justify-content: center;
-    align-items: flex-start; 
+    align-items: flex-start;
     gap: 15px;
     flex-wrap: wrap;
 }
 
-/* Individual Button */
 .hover-link {
     display: flex;
     flex-direction: column;
@@ -73,8 +72,8 @@ header h1 {
     border: 2px solid #fff;
     border-radius: 25px;
     overflow: hidden;
-    min-width: 140px;
-    transition: all 0.8s ease-out; 
+    max-width: 150px;
+    transition: all 0.8s ease-out;
 }
 
 .hover-link:hover {
@@ -119,12 +118,14 @@ header h1 {
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
+/* Page Load Animation Setup */
 section {
     margin-bottom: 3.5rem;
     opacity: 0; 
     animation: fadeIn 0.8s ease-out forwards;
 }
 
+/* Staggered Animation Delays */
 section:nth-child(1) { animation-delay: 0.1s; }
 section:nth-child(2) { animation-delay: 0.2s; }
 section:nth-child(3) { animation-delay: 0.3s; }
@@ -132,6 +133,7 @@ section:nth-child(4) { animation-delay: 0.4s; }
 section:nth-child(5) { animation-delay: 0.5s; }
 section:nth-child(6) { animation-delay: 0.6s; }
 section:nth-child(7) { animation-delay: 0.7s; }
+section:nth-child(8) { animation-delay: 0.8s; }
 
 @keyframes fadeIn {
     0% {
@@ -152,11 +154,13 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+/* Text Styles */
 .about-text, .edu-text {
     font-size: 1.1rem;
     color: #444;
 }
 
+/* Timeline / List Styles */
 .timeline-item {
     margin-bottom: 1.5rem;
     padding-left: 15px;
@@ -203,7 +207,7 @@ h2 {
     background-color: #18bc9c;
     color: white;
     box-shadow: 0 4px 10px rgba(24, 188, 156, 0.3);
-    transition: all 0.6s ease-out; 
+    transition: all 0.6s ease-out;
 }
 .skill-name {
     font-weight: 600;
@@ -221,15 +225,16 @@ h2 {
     color: #fff;
     font-size: 0.9rem;
     font-weight: 500;
-    transition: all 0.8s ease-out; 
+    transition: all 0.8s ease-out;
 }
 .skill-item:hover .skill-details {
     max-height: 200px;
     opacity: 1;
     margin-top: 15px;
-    transition: all 0.6s ease-out; 
+    transition: all 0.6s ease-out;
 }
 
+/* Mobile View Adaptation for Skills */
 @media (max-width: 768px) {
     .skill-item {
         background-color: #18bc9c;
@@ -253,6 +258,33 @@ h2 {
     border: 1px solid #bdc3c7;
     display: inline-block;
     margin-right: 10px;
+}
+.pill-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* Certification View Button */
+.cert-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 6px 18px;
+    background-color: transparent;
+    color: #18bc9c;
+    border: 2px solid #18bc9c;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease-out;
+}
+
+.cert-btn:hover {
+    background-color: #18bc9c;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(24, 188, 156, 0.3);
+    transform: translateY(-2px);
 }
 
 /* Project Cards */
